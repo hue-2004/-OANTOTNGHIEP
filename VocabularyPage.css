@@ -1,0 +1,530 @@
+.vocab-page {
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f6f8fb 100%
+    );
+}
+
+
+/* HEADER */
+
+.vocab-header {
+  padding: 55px 24px 35px;
+
+  background:
+    radial-gradient(
+      circle at 85% 10%,
+      #ffe4e8,
+      transparent 30%
+    );
+}
+
+.vocab-header-inner {
+  max-width: 1180px;
+
+  margin: auto;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  gap: 30px;
+}
+
+.vocab-badge {
+  display: inline-block;
+
+  padding: 7px 12px;
+
+  background: #fff0f2;
+
+  color: #ef3340;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+
+  font-weight: 800;
+}
+
+.vocab-header h1 {
+  margin: 14px 0 8px;
+
+  color: #17213b;
+
+  font-size: 40px;
+}
+
+.vocab-header p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: #7f8a9d;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* LEVEL */
+
+.vocab-level-switch {
+  display: flex;
+
+  gap: 5px;
+
+  padding: 5px;
+
+  background: white;
+
+  border:
+    1px solid #e2e7ee;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 8px 22px
+    rgba(25,40,70,.05);
+}
+
+.vocab-level-switch button {
+  min-width: 95px;
+
+  padding: 10px 14px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #69758a;
+
+  cursor: pointer;
+}
+
+.vocab-level-switch button.active {
+  background: #ef3340;
+
+  color: white;
+}
+
+.vocab-level-switch strong {
+  display: block;
+
+  font-size: 15px;
+}
+
+.vocab-level-switch small {
+  display: block;
+
+  margin-top: 2px;
+
+  font-size: 9px;
+}
+
+
+/* TOOLBAR */
+
+.vocab-toolbar {
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 0 24px 18px;
+
+  display: flex;
+
+  gap: 10px;
+}
+
+.vocab-search {
+  flex: 1;
+
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 0 15px;
+
+  background: white;
+
+  border:
+    1px solid #e1e6ed;
+
+  border-radius: 11px;
+
+  box-shadow:
+    0 5px 17px
+    rgba(30,45,70,.035);
+}
+
+.vocab-search span {
+  font-size: 17px;
+}
+
+.vocab-search input {
+  width: 100%;
+
+  height: 100%;
+
+  border: none;
+
+  outline: none;
+
+  font-size: 12px;
+
+  color: #17213b;
+}
+
+.vocab-category {
+  min-width: 175px;
+
+  height: 48px;
+
+  padding: 0 12px;
+
+  background: white;
+
+  border:
+    1px solid #e1e6ed;
+
+  border-radius: 11px;
+
+  color: #5e6a80;
+
+  outline: none;
+}
+
+
+/* SUMMARY */
+
+.vocab-summary {
+  max-width: 1180px;
+
+  margin: auto;
+
+  padding: 0 24px 22px;
+
+  display: flex;
+
+  gap: 10px;
+}
+
+.vocab-summary div {
+  min-width: 110px;
+
+  padding: 12px 15px;
+
+  background: white;
+
+  border:
+    1px solid #e3e8ef;
+
+  border-radius: 10px;
+}
+
+.vocab-summary strong,
+.vocab-summary span {
+  display: block;
+}
+
+.vocab-summary strong {
+  color: #ef3340;
+
+  font-size: 18px;
+}
+
+.vocab-summary span {
+  margin-top: 3px;
+
+  color: #8b95a7;
+
+  font-size: 9px;
+}
+
+
+/* MAIN */
+
+.vocab-main {
+  max-width: 1180px;
+
+  margin: auto;
+
+  padding:
+    0 24px 55px;
+}
+
+
+/* GRID */
+
+.vocab-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 16px;
+}
+
+
+/* CARD */
+
+.vocab-card {
+  min-height: 270px;
+
+  padding: 19px;
+
+  background: white;
+
+  border:
+    1px solid #e2e7ee;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 7px 22px
+    rgba(25,40,70,.045);
+
+  transition: .2s;
+}
+
+.vocab-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #ffc3c9;
+
+  box-shadow:
+    0 14px 32px
+    rgba(25,40,70,.09);
+}
+
+
+/* CARD TOP */
+
+.vocab-card-top {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.vocab-card-top span {
+  padding: 5px 8px;
+
+  background: #fff0f2;
+
+  color: #ef3340;
+
+  border-radius: 6px;
+
+  font-size: 8px;
+
+  font-weight: 700;
+}
+
+.vocab-card-top small {
+  padding: 5px 8px;
+
+  background: #f3f5f8;
+
+  color: #7d8799;
+
+  border-radius: 6px;
+
+  font-size: 8px;
+
+  font-weight: 700;
+}
+
+
+/* WORD */
+
+.vocab-word {
+  margin-top: 28px;
+
+  text-align: center;
+
+  color: #ef3340;
+
+  font-size: 38px;
+
+  font-weight: 800;
+
+  line-height: 1.25;
+}
+
+
+/* MEANING */
+
+.vocab-meaning {
+  margin-top: 8px;
+
+  text-align: center;
+
+  color: #17213b;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+
+/* EXAMPLE */
+
+.vocab-example {
+  margin-top: 20px;
+
+  padding: 12px;
+
+  background: #f7f9fc;
+
+  border-radius: 9px;
+}
+
+.vocab-example span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #9aa3b1;
+
+  font-size: 8px;
+}
+
+.vocab-example p {
+  margin: 0;
+
+  color: #556278;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* FOOTER */
+
+.vocab-card-bottom {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: 14px;
+}
+
+.vocab-card-bottom small {
+  color: #929baa;
+
+  font-size: 9px;
+}
+
+.vocab-card-bottom button {
+  padding: 7px 10px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #fff0f2;
+
+  color: #ef3340;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.vocab-card-bottom button:hover {
+  background: #ef3340;
+
+  color: white;
+}
+
+
+/* EMPTY */
+
+.vocab-empty {
+  padding: 80px 20px;
+
+  text-align: center;
+
+  background: white;
+
+  border:
+    1px solid #e3e8ef;
+
+  border-radius: 16px;
+}
+
+.vocab-empty > div {
+  font-size: 40px;
+}
+
+.vocab-empty h2 {
+  color: #17213b;
+
+  font-size: 20px;
+}
+
+.vocab-empty p {
+  color: #8993a5;
+
+  font-size: 12px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .vocab-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .vocab-header-inner {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .vocab-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vocab-toolbar {
+    flex-direction: column;
+  }
+
+  .vocab-category {
+    width: 100%;
+  }
+
+  .vocab-level-switch {
+    width: 100%;
+  }
+
+  .vocab-level-switch button {
+    flex: 1;
+  }
+
+  .vocab-summary {
+    flex-wrap: wrap;
+  }
+}
